@@ -1,0 +1,60 @@
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: rotate(0deg); }
+      20% { transform: rotate(15deg); }
+      40% { transform: rotate(-15deg); }
+      60% { transform: rotate(10deg); }
+      80% { transform: rotate(-10deg); }
+    }
+
+    body {
+      background-color: #cd4e25;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 1.5s ease forwards;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Espaço para logo */
+    .logo-container {
+      margin-bottom: 30px;
+    }
+    .logo-container img {
+      max-width: 200px;
+      height: auto;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .emoji {
+      font-size: 64px;
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: shake 2s infinite;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    p {
+      color: #666;
+      font-size: 18px;
+      margin: 10px 0;
+      animation: fadeIn 2.5s ease forwards;
+    }
